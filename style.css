@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  .ban {
+    position: relative;
+    min-height: 100vh;
+    background: url("ban.jpg");
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section {
+    padding: 100px;
+  }
+  .ban h2 {
+    font-size: 3em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5em;
+  }
+  
+  .ban h2 span {
+    font-weight: 700;
+    font-size: 1.5em;
+  }
+  
+  .ban h3 {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+  }
+  .btn {
+    position: relative;
+    background: #c0912b;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+  }
+  .btn:hover {
+    position: relative;
+    background: #558acf;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 70px 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s ease-in;
+  }
+  header .logo {
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: -15px;
+  }
+  header.sticky {
+    background: rgba(51, 45, 45, 0.418);
+    padding-top: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  }
+  header.sticky .logo {
+    color: #111;
+  }
+  
+  header ul {
+    position: relative;
+    display: flex;
+    margin-top: -15px;
+  }
+  
+  header ul li {
+    position: relative;
+    list-style: none;
+  }
+  
+  header ul li a {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    margin: 0 15px;
+    color: #fff;
+  }
+  header ul li a:hover {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    margin: 0 15px;
+    color: rgb(78, 178, 218);
+  }
+  header.sticky ul li a {
+    color: #111;
+  }
+  header.sticky ul li a:hover {
+    color: #fff;
+  }
+  .heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .contentBx {
+    display: flex;
+    width: 50%;
+    float: left;
+    height: 30%;
+  }
+  .contentBx h3 {
+    padding-top: 30%;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .heading h2 {
+    font-weight: 600;
+    font-size: 30px;
+  }
+  .servicesBx {
+    padding: 2%;
+  }
+  .servicesBx img {
+    width: 100%;
+    height: 50%;
+  }
+  .w50 {
+    padding-top: 5%;
+    padding-left: 10%;
+    display: flex;
+    float: right;
+    width: 50%;
+    height: 10%;
+  }
+  .img {
+    width: 89%;
+    height: 17%;
+  }
+  .services {
+    background: rgb(118, 136, 207);
+    box-shadow: 0 4px rgb(73, 72, 72);
+  }
+  .heading.white {
+    color: rgb(238, 234, 234);
+  }
+  .services .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .services .content .servicesBx {
+    
+  }
+  .services .content .servicesBx:hover {
+    background: #a7c4db;
+    margin-top: -5%;
+    margin-bottom: 5%;
+  }
+  
+  .services .content .servicesBx h2 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .work .content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .work .content .workBx {
+    width: 50%;
+    padding: 20px;
+  }
+  .work .content .workBx img {
+    width: 100%;
+  }
+  
+  .testimonial .content .testimonialBx h3 {
+    margin-top: 40px;
+    text-align: end;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1em;
+  }
+  .testimonial .content .testimonialBx p {
+    color: #fff;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .testimonial .content .testimonialBx h3 span {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .contact {
+    background-color: rgba(17, 17, 17, 0.534);
+  }
+  .contact .content {
+    width: 100%;
+  }
+  .contactInfo {
+    display: flex;
+    float: left;
+    width: 50%;
+    min-height: 40%;
+  }
+  .contactInfoBx {
+    position: relative;
+  }
+  .contactInfoBx .box {
+    position: relative;
+    padding: 20px;
+    display: flex;
+  }
+  .contactInfoBx .box .icon {
+    min-width: 40px;
+    padding-top: 4px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+  .formBx {
+    margin-left: 40%;
+    display: flex;
+    float: right;
+    width: 50%;
+  }
+  .formBx form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formBx form h3,
+  .contactInfo h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .formBx form input,
+  .formBx form textarea {
+    width: 500px;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: #222;
+    color: #fff;
+  }
+  .buf {
+    margin-top: 1%;
+  }
+  .formBx form textarea {
+    min-height: 200px;
+  }
+  
+  .formBx form input::placeholder .formBx form textarea::placeholder {
+    color: aquamarine;
+  }
+  
+  .formBx form input[type="submit"] {
+    max-width: 100px;
+    background: #2196f3;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .contactInfo .text {
+    color: #fff;
+    font-weight: 300;
+  }
+  .contactInfo h3 {
+    color: #8dbce2;
+    font-weight: 600;
+  }
+  
+  .copyright {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /*Responsive*/
+  @media (max-width: 991px) {
+    header,
+    header.sticky {
+      color: black;
+      padding: 20px 50px;
+      z-index: 1000;
+    }
+    .menu {
+      position: fixed;
+      top: 75px;
+      left: -100%;
+      display: block;
+      padding: 100px 50px;
+      text-align: center;
+      width: 100%;
+      height: 100vh;
+      background: #fff;
+      transition: 0.5s;
+      z-index: 999;
+      border-top: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    .menu.active {
+      left: 0;
+    }
+  
+    header ul li a {
+      color: #111;
+      font-size: 20px;
+      margin: 10px;
+    }
+    header ul li a:hover {
+      color: rgb(39, 61, 158);
+      font-size: 20px;
+      margin: 10px;
+    }
+    .toggle {
+      width: 40px;
+      height: 40px;
+      filter: invert(1);
+      background-image: url("img/menu.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 30px;
+      cursor: pointer;
+    }
+    .toggle.active {
+      width: 40px;
+      height: 40px;
+      background-image: url("img/cross.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 30px;
+      cursor: pointer;
+    }
+    .banner {
+      padding: 150px 50px 100px;
+    }
+    .banner h2 {
+      font-size: 1.5em;
+    }
+    section {
+      padding: 100px 50px;
+    }
+    .testimonial .content {
+      flex-direction: column;
+    }
+    .testimonialBx {
+      width: 80%;
+    }
+  
+    .formBx form input,
+    .formBx form textarea {
+      width: 300px;
+      margin-bottom: 20px;
+      padding: 15px;
+      font-size: 16px;
+      border: none;
+      outline: none;
+      background: #222;
+      color: #fff;
+    }
+  }
+  @media (max-width: 480px) {
+    .contact .content {
+      flex-direction: column;
+    }
+  }
